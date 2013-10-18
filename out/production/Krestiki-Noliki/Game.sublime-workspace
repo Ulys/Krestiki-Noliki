@@ -1,0 +1,342 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rul",
+				"rules	Attr"
+			],
+			[
+				"bo",
+				"border-collapse"
+			],
+			[
+				"border-bo",
+				"border-bottom-right-radius"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"ce",
+				"cellspacing	Attr"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"h",
+				"href	Attr"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"posi",
+				"list-style-position"
+			],
+			[
+				"resul",
+				"resultSrtring"
+			],
+			[
+				"max",
+				"maxlength	Attr"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"colo",
+				"color"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"deci",
+				"deciFlag"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"resu",
+				"resultString"
+			],
+			[
+				"result",
+				"resultString"
+			],
+			[
+				"num",
+				"num"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"p",
+				"p	Tag"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"line",
+				"list-style-position"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"bc",
+				"background-color"
+			],
+			[
+				"backgro",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/F/Рабочая/KPI/ОЯП/HTML/Calculator/style.css",
+		"/F/Рабочая/KPI/ОЯП/HTML/Calculator/Calculator.html",
+		"/F/Рабочая/KPI/ОЯП/HTML/style.css",
+		"/F/Рабочая/KPI/ОЯП/HTML/Calculator.html",
+		"/F/Загрузки/C9HTMLCode/Lesson20/svg_interactivity.html",
+		"/F/Загрузки/C9HTMLCode/Lesson20/copy_paste_svg.html",
+		"/F/Загрузки/C9HTMLCode/Lesson20/external_link.html",
+		"/F/Загрузки/C9HTMLCode/Lesson20/Test.svg",
+		"/F/Загрузки/C9HTMLCode/Lesson19/Lesson19.html",
+		"/F/Загрузки/C9HTMLCode/Lesson18/Work/Lesson18.html",
+		"/F/Загрузки/C9HTMLCode/Lesson18/Work/poster.jpg",
+		"/F/Загрузки/C9HTMLCode/Lesson17/Work/styles.css",
+		"/F/Загрузки/C9HTMLCode/Lesson17/Work/Lesson17.html",
+		"/F/Загрузки/C9HTMLCode/Lesson17/Work/web fonts/gooddog_regular_macroman/GoodDog-demo.html",
+		"/F/Загрузки/C9HTMLCode/Lesson16/Lesson16.html",
+		"/F/Загрузки/C9HTMLCode/Lesson15/Lesson15.html",
+		"/F/Загрузки/C9HTMLCode/Lesson12/Work/styles.css",
+		"/F/Загрузки/C9HTMLCode/Lesson03/Work/style.css",
+		"/F/Загрузки/C9HTMLCode/Lesson03/Work/Lesson03.html",
+		"/F/Загрузки/C9HTMLCode/Lesson13/Lesson13.html",
+		"/F/Загрузки/C9HTMLCode/Lesson04/test.html",
+		"/F/Загрузки/C9HTMLCode/Lesson10/After/Lesson10.html",
+		"/F/Загрузки/C9HTMLCode/Lesson11/Work/Lesson11.html",
+		"/F/Загрузки/C9HTMLCode/Lesson12/Work/Lesson12.html",
+		"/F/Загрузки/C9HTMLCode/Lesson12/Before/styles.css",
+		"/F/Загрузки/C9HTMLCode/Lesson12/Before/Lesson12.html",
+		"/F/Загрузки/C9HTMLCode/Lesson10/Before/Lesson10.html",
+		"/F/Загрузки/C9HTMLCode/Lesson09/Work/Lesson09.html",
+		"/F/Рабочая/KPI/ОЯП/HTML/first_page.html",
+		"/F/Рабочая/KPI/ОЯП/HTML/Lesson2MS.html",
+		"/F/Загрузки/C9HTMLCode/Lesson09/Before/Lesson09.html",
+		"/F/Загрузки/C9HTMLCode/Lesson08/Before/Lesson08.html",
+		"/F/Загрузки/C9HTMLCode/Lesson06/lesson06.html",
+		"/F/Рабочая/KPI/ОЯП/HTML/task.html",
+		"/F/Загрузки/C9HTMLCode/Lesson05/Work/Lesson05.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "Game.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
