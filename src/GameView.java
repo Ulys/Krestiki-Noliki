@@ -16,7 +16,7 @@ public class GameView {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
 			number = Integer.parseInt(br.readLine());
-			if (number < MIN_INPUT && number > MAX_INPUT) {
+			if (number < MIN_INPUT || number > MAX_INPUT) {
 				System.out
 						.println("Sorry, but the numberber was wrong!!!\n It should be from "+ MIN_INPUT 
 								+ " to "+ MAX_INPUT +" included.\n Please, try again.");
@@ -41,12 +41,17 @@ public class GameView {
 	}
 
 	public int chooseKindOfGame() {
+		int kindOfGame;
+		boolean isItFirstTry = true;
 		System.out
 				.println("Choose type of Game:\n"+ PERSON_PLAY +
 						" - play with person\n"+ COMPUTER_0_PLAY + " - play X against computer\n" 
 						+ COMPUTER_X_PLAY + " - play 0 against computer");
-		int kindOfGame;
 		do {
+			if (!isItFirstTry){
+				System.out.println("You input wrong number, int should be between " +
+						PERSON_PLAY + " and " + COMPUTER_X_PLAY + ".");
+			}
 			kindOfGame = GameView.getNumberForCordinates();
 		} while (!isKindOfGameReal(kindOfGame));
 		return kindOfGame;

@@ -21,16 +21,14 @@ public class GameController {
 	
 	private void getMoveFromUser(Coordinate coordinate){ 
 		do{
-			Coordinate newCoordinate = new Coordinate(GameView.getCoordinateFromUser());
-			coordinate.setX(newCoordinate.getX());
-			coordinate.setY(newCoordinate.getY());
+			coordinate.setCoordinate(GameView.getCoordinateFromUser());
 		} while (!model.isFieldCellFree(coordinate));
 	}
-	
+
 	private Coordinate getCompCoordinate(Coordinate coordinate){
 		do{
-			Coordinate newcoordinate = new Coordinate(comp.generateCoordinate());
-			coordinate.setCoordinate(newcoordinate);
+			Coordinate newCoordinate = new Coordinate(comp.generateCoordinate());
+			coordinate.setCoordinate(newCoordinate);
 			
 		} while (!model.isFieldCellFree(coordinate));
 		return coordinate;
@@ -38,9 +36,9 @@ public class GameController {
 	
 	private void move(char sign){
 		Coordinate coordinate = new Coordinate();
-		coordinate.setSign(sign);
 		GameView.askForMove(sign);
 		getMoveFromUser(coordinate);
+		coordinate.setSign(sign);
 		model.takeUpField(coordinate);
 	}
 	
@@ -52,15 +50,15 @@ public class GameController {
 	}
 	
 	private void playWithPerson(){
-		boolean moveIndex = true;
+		boolean isXmove = true;
 		while (!model.isEndGame())
 		{
-			if (moveIndex){
+			if (isXmove){
 				move('X');
 			} else {
 				move('0');
 			}
-			moveIndex = !moveIndex;
+			isXmove = !isXmove;
 			GameView.printOutField(model.getSignField());
 		}
 		GameView.winnerShowing(model.winnerShowing());
@@ -68,32 +66,32 @@ public class GameController {
 	}
 	
 	private void playWithComputerX(){
-		boolean moveIndex = true;
+		boolean isXmove = true;
 		while (!model.isEndGame())
 		{
-			if (moveIndex){
+			if (isXmove){
 				move('X');
 			} else {
 				computerMove('0');
 				GameView.printOutField(model.getSignField());
 			}
-			moveIndex = !moveIndex;
+			isXmove = !isXmove;
 		}
 		GameView.printOutField(model.getSignField());
 		GameView.winnerShowing(model.winnerShowing());
 	}
 	
 	private void playWithComputer0(){
-		boolean moveIndex = true;
+		boolean isXmove = true;
 		while (!model.isEndGame())
 		{
-			if (moveIndex){
+			if (isXmove){
 				computerMove('X');
 				GameView.printOutField(model.getSignField());
 			} else {
 				move('0');
 			} 
-			moveIndex = !moveIndex;
+			isXmove = !isXmove;
 		}
 		GameView.printOutField(model.getSignField());
 		GameView.winnerShowing(model.winnerShowing());
