@@ -1,24 +1,22 @@
 public class GameField {
 	private static final int SIZE = 3;
-	public int availabilityField[][] = {{0,0,0},{0,0,0},{0,0,0}};
-	public char signField[][] = {{' ',' ',' '},{' ',' ',' '},{' ',' ',' '}};
+	public char signField[][] = {{0, 0, 0},{0, 0, 0},{0, 0, 0}};
 	
 	public char[][] getSignField(){
 		return signField;
 	}
 	
 	public boolean isFieldCellFree(Coordinate coordinate){
-		return availabilityField[coordinate.getX()][coordinate.getY()] == 0;
+		return signField[coordinate.getX()][coordinate.getY()] == 0;
 	}
 	
 	public void takeUpField(Coordinate coordinate){
 		if (isFieldCellFree(coordinate)){	
-			takeUpAvailabilityField(coordinate);
 			takeUpSignField(coordinate);
 		}
 	}
 	
-	public boolean isAnyFreeCell(){
+	private boolean isAnyFreeCell(){
 		for (int i = 0; i < SIZE; i++){
 			for (int j = 0; j < SIZE; j++){
 				if (isFieldCellFree(i, j)){
@@ -33,15 +31,11 @@ public class GameField {
 		signField[coordinate.getX()][coordinate.getY()] = coordinate.getSign();
 	}
 	
-	private void takeUpAvailabilityField(Coordinate coordinate){
-		availabilityField[coordinate.getX()][coordinate.getY()] = 1;
-	}
-	
 	private boolean isFieldCellFree(int x, int y){
-		return availabilityField[x][y] == 0;
+		return signField[x][y] == 0;
 	}
 	
-	public char winnerShowing(){
+	public char showWinner(){
 		return whatIsTheEnd();
 	}
 	
@@ -84,21 +78,21 @@ public class GameField {
 	}
 	
 	private boolean horizontalCheck(int row){
-		if (signField[row][0] == ' '){
+		if (signField[row][0] == 0){
 			return false;
 		}
-	return (signField[row][0] == signField[row][1])&&(signField[row][0] == signField[row][2]);
+		return (signField[row][0] == signField[row][1])&&(signField[row][0] == signField[row][2]);
 	}
 	
 	private boolean verticalCheck(int column){
-		if (signField[0][column] == ' '){
+		if (signField[0][column] == 0){
 			return false;
 		}
 		return (signField[0][column] == signField[1][column])&&(signField[0][column] == signField[2][column]);
 	}
 	
 	private boolean diagonalCheck(){
-		if (signField[1][1] == ' '){
+		if (signField[1][1] == 0){
 			return false;
 		}
 		return firstDiagonalCheck()||secondDiagonalCheck();

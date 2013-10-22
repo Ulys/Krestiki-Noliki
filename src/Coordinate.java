@@ -9,13 +9,11 @@ public class Coordinate {
 		y = -1;
 		sign = 0;
 	}
-	
-	Coordinate(int x, int y){
+	Coordinate(int x, int y, char sign){
 		this.x = x;
 		this.y = y;
-		sign = 0;
+		this.sign = sign;
 	}
-	
 	Coordinate(Coordinate coordinate){
 		this.x = coordinate.getX();
 		this.y = coordinate.getY();

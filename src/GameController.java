@@ -50,51 +50,51 @@ public class GameController {
 	}
 	
 	private void playWithPerson(){
-		boolean isXmove = true;
+		boolean isXMove = true;
 		while (!model.isEndGame())
 		{
-			if (isXmove){
+			if (isXMove){
 				move('X');
 			} else {
 				move('0');
 			}
-			isXmove = !isXmove;
+			isXMove = !isXMove;
 			GameView.printOutField(model.getSignField());
 		}
-		GameView.winnerShowing(model.winnerShowing());
+		GameView.showWinner(model.showWinner());
 		
 	}
 	
 	private void playWithComputerX(){
-		boolean isXmove = true;
+		boolean isXMove = true;
 		while (!model.isEndGame())
 		{
-			if (isXmove){
+			if (isXMove){
 				move('X');
 			} else {
 				computerMove('0');
 				GameView.printOutField(model.getSignField());
 			}
-			isXmove = !isXmove;
+			isXMove = !isXMove;
 		}
 		GameView.printOutField(model.getSignField());
-		GameView.winnerShowing(model.winnerShowing());
+		GameView.showWinner(model.showWinner());
 	}
 	
 	private void playWithComputer0(){
-		boolean isXmove = true;
+		boolean isXMove = true;
 		while (!model.isEndGame())
 		{
-			if (isXmove){
+			if (isXMove){
 				computerMove('X');
 				GameView.printOutField(model.getSignField());
 			} else {
 				move('0');
 			} 
-			isXmove = !isXmove;
+			isXMove = !isXMove;
 		}
 		GameView.printOutField(model.getSignField());
-		GameView.winnerShowing(model.winnerShowing());
+		GameView.showWinner(model.showWinner());
 	}
 	
 }

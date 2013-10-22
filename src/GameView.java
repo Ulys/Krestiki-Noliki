@@ -52,7 +52,7 @@ public class GameView {
 				System.out.println("You input wrong number, int should be between " +
 						PERSON_PLAY + " and " + COMPUTER_X_PLAY + ".");
 			}
-			kindOfGame = GameView.getNumberForCordinates();
+			kindOfGame = getNumberForCordinates();
 		} while (!isKindOfGameReal(kindOfGame));
 		return kindOfGame;
 	}
@@ -70,7 +70,7 @@ public class GameView {
 		System.out.println(sign + " move");
 	}
 	
-	public static void winnerShowing(char sign){
+	public static void showWinner(char sign){
 		if (sign != 0){
 			System.out.println("Congratulations " + sign + " win!");
 		} else { 
@@ -80,12 +80,16 @@ public class GameView {
 	
 	public static void printOutField(char signField[][]){
 		for (int i = 0; i < SIZE; i++ ){
-			System.out.println("      |     |");
-			System.out.println("   " + signField[i][0] + "  |  " + signField[i][1] +"  |  "+ signField[i][2]);
-			System.out.println("      |     |");
-			if (i != 2){
-				System.out.println(" -----+-----+-----");
-			}
+			printLine(i, signField);
+		}
+	}
+	
+	private static void printLine (int lineNumber, char signField[][]){
+		System.out.println("      |     |");
+		System.out.println("   " + signField[lineNumber][0] + "  |  " + signField[lineNumber][1] +"  |  "+ signField[lineNumber][2]);
+		System.out.println("      |     |");
+		if (lineNumber != 2){
+			System.out.println(" -----+-----+-----");
 		}
 	}
 }
